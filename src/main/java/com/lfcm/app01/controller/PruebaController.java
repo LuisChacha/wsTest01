@@ -25,6 +25,12 @@ public class PruebaController {
     }
     
     
+    @GetMapping ("/presentarse")
+    public String pedirnombreedad(@RequestParam String nombre,
+            @RequestParam int edad){
+        return "Hola me llamo: " + nombre + " y mi edad es: " + edad;
+    }
+    
     
     
 }
